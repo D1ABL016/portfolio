@@ -1,0 +1,169 @@
+:root {
+    --bgcolor: #081b29;
+    --whitevalacolour: #ededed;
+    --lightbluevalacolour: #00abf0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+
+}
+
+::selection {
+    background-color: var(--lightbluevalacolour);
+    color: var(--bgcolor);
+}
+
+body {
+    background-color: var(--bgcolor);
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    /* background-color: yellowgreen; */
+    width: 100%;
+    padding: 20px 10%;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+
+}
+
+.logo {
+    text-decoration: none;
+    color: var(--whitevalacolour);
+    font-weight: 700;
+    font-size: 25px;
+
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--whitevalacolour);
+    font-weight: 500;
+    margin-left: 35px;
+}
+
+nav a:first-child {
+    color: var(--lightbluevalacolour);
+}
+
+nav a:first-child:hover {
+    color: var(--whitevalacolour);
+}
+
+nav a:hover {
+    /* background-color: green; */
+    /* text-decoration: solid ; */
+    color: var(--lightbluevalacolour);
+}
+
+main {
+    background-image: url(home.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 89px 10%;
+    justify-content: center;
+    /* background-color: aquamarine; */
+    /* max-width: 300px; */
+    color: var(--whitevalacolour);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main h1 {
+    font-weight: 800;
+}
+
+main h2 {
+    color: var(--lightbluevalacolour);
+    font-weight: 700;
+}
+
+.end {
+    display: flex;
+    /* background-color: #fff; */
+    justify-content: normal;
+    align-items: start;
+    gap: 40px;
+    width: 50vw;
+    /* margin: 3vh; */
+    /* padding: 2vw; */
+
+}
+
+p {
+    margin-top: 2vh;
+}
+
+.end a {
+    font-size: 2vh;
+    margin-top: 1vw;
+    padding: 1vh;
+    font-weight: 700;
+    width: 8vw;
+    text-align: center;
+    color: var(--lightbluevalacolour);
+    border: 2px solid var(--lightbluevalacolour);
+    text-decoration: none;
+    border-radius: 1vw;
+}
+
+.end a:first-child {
+    background-color: var(--lightbluevalacolour);
+    color: var(--bgcolor);
+}
+
+.end a:first-child:hover {
+    color: var(--lightbluevalacolour);
+    background-color: var(--bgcolor);
+}
+
+.end a:hover {
+    background-color: var(--lightbluevalacolour);
+    color: var(--bgcolor);
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 3vh;
+    margin-left: 10vw;
+    margin-bottom: 9vh;
+    align-items: center;
+
+}
+
+footer a {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+    height: 3vw;
+    width: 3vw;
+    border: 1px solid var(--lightbluevalacolour);
+    border-radius: 50%;
+
+    color: var(--lightbluevalacolour);
+}
+
+footer a:hover {
+    color: var(--bgcolor);
+    background-color: var(--lightbluevalacolour);
+    /* border: 1px solid var(--lightbluevalacolour); */
+}
+
+footer a i {
+    padding: 1.5vh;
+}
