@@ -101,22 +101,21 @@ main h2 {
 }
 
 p {
-    margin-top: 2vh;
+    margin-top: 10px;
 }
 
 .end a {
-    font-size: 2vh;
-    margin-top: 1vw;
-    padding: 1vh;
+    font-size: 15px;
+    margin-top: 11px;
+    padding: 5px;
     font-weight: 700;
-    width: 8vw;
+    width: 100px;
     text-align: center;
     color: var(--lightbluevalacolour);
     border: 2px solid var(--lightbluevalacolour);
     text-decoration: none;
-    border-radius: 1vw;
+    border-radius: 10px;
 }
-
 .end a:first-child {
     background-color: var(--lightbluevalacolour);
     color: var(--bgcolor);
@@ -137,11 +136,10 @@ footer {
     bottom: 0px;
     display: flex;
     justify-content: flex-start;
-    gap: 3vh;
-    margin-left: 10vw;
-    margin-bottom: 9vh;
+    gap: 35px;
+    margin-left: 75px;
+    margin-bottom: 75px;
     align-items: center;
-
 }
 
 footer a {
@@ -150,11 +148,10 @@ footer a {
     align-items: center;
     text-decoration: none;
     text-align: center;
-    height: 3vw;
-    width: 3vw;
+    height: 50px;
+    width: 50px;
     border: 1px solid var(--lightbluevalacolour);
     border-radius: 50%;
-
     color: var(--lightbluevalacolour);
 }
 
@@ -165,5 +162,5 @@ footer a:hover {
 }
 
 footer a i {
-    padding: 1.5vh;
+    padding: 16px;
 }
