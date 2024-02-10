@@ -7,6 +7,7 @@
 ::selection {
     color: var(--lightbluevalacolour);
 }
+
 a {
     text-decoration: none;
 }
@@ -18,24 +19,46 @@ a {
     font-family: 'Poppins', sans-serif;
     color: var(--whitevalacolour);
 }
-header{
-    box-sizing: border-box;    
+
+header {
+    box-sizing: border-box;
     padding: 4px;
-    gap: 2px;
+    /* gap: 2px; */
     width: 100%;
     /* background-color: red; */
     display: flex;
 }
 
-.logo{
+.logo {
+    box-sizing: border-box;
     padding: 6px;
     width: 50%;
     display: flex;
     /* background: #000; */
     gap: 3px;
 }
-.box{
-   
+
+.box {
+    box-sizing: border-box;
+    text-align: center;
     width: 20%;
-/* background-color: darkblue; */
+    /* background-color: darkblue; */
+}
+@media only screen and (max-width:425px){
+    *{
+        font-size:1rem ;
+    }
+    header{
+        flex-direction: column;
+    }
+    .logo{
+        width: 100%;
+    }
+    .logo > a{
+        width: 100%;
+        text-align: center;
+    }
+    .box{
+        background-color: red;
+    }
 }
