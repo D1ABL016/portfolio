@@ -29,6 +29,65 @@ header {
     display: flex;
 }
 
+main {
+    margin-left: 10%;
+    height: 70vh;
+    /* background: #000; */
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+main h2 {
+    color: var(--lightbluevalacolour);
+}
+
+main p {
+    margin-top: 2%;
+    max-width: 50%;
+}
+footer{
+    margin-left: 10%;
+    display: flex;
+    justify-content: flex-start;
+    height: 20vh;
+    align-items: end;
+    gap: 11%;
+
+    /* background-color: red; */
+}
+footer  i{
+    box-sizing: border-box;
+    border: 1px solid var(--lightbluevalacolour);
+    padding: 5px;
+    min-width: 19%;
+    min-height: 19%;
+    border-radius: 50%;
+    transform: scale(2);
+    color: var(--lightbluevalacolour);
+}
+.buttons {
+    display: flex;
+    width: 100%;
+    margin-top: 2%;
+    justify-content: flex-start;
+}
+
+.bt {
+    text-align: center;
+    font-weight: 600;
+    background-color: var(--lightbluevalacolour);
+    color: var(--bgcolor);
+    border: 3px solid var(--lightbluevalacolour);
+    box-sizing: border-box;
+    border-radius: 9%;
+    width: 10%;
+    padding: 0.8%;
+    margin-right: 2%;
+    cursor: pointer;
+}
+
 .logo {
     box-sizing: border-box;
     padding: 6px;
@@ -44,20 +103,58 @@ header {
     width: 20%;
     /* background-color: darkblue; */
 }
-@media only screen and (max-width:425px){
-    *{
-        font-size:0.85rem ;
+
+.blue {
+    color: var(--lightbluevalacolour);
+}
+
+.bold {
+    margin-left: 10%;
+    width: 40%;
+    font-weight: 600;
+}
+
+@media only screen and (max-width:760px) {
+    * {
+        font-size: 0.85rem;
     }
-    header{
+
+    header {
         flex-direction: column;
     }
-    .logo{
+
+    .logo {
         width: 100%;
     }
-    .logo > a{
+
+    .logo>a {
         width: 100%;
         text-align: center;
     }
-    
-}
 
+    main h1 {
+        font-size: 2em;
+    }
+
+    main h2 {
+
+        font-size: 1.5em;
+    }
+
+    main p {
+        font-size: 1.25em;
+        max-width: 60%;
+    }
+
+    .buttons {
+        flex-direction: column;
+        row-gap: 7px;
+        align-items: center;
+    }
+
+    .bt {
+        border-radius: 5px;
+        min-width: 50vw;
+        font-size: 1rem;
+    }
+}
