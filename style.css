@@ -13,6 +13,7 @@ a {
 }
 
 * {
+    overflow: hidden;
     background-color: var(--bgcolor);
     margin: 0;
     padding: 0;
@@ -118,8 +119,9 @@ footer  i{
     * {
         font-size: 0.85rem;
     }
-
+    
     header {
+        /* background-color: red; */
         flex-direction: column;
     }
 
